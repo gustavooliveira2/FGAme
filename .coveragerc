@@ -4,6 +4,8 @@ include =
 omit =
     src/FGAme/tests/*
 
+[testenv:cov]
+usedevelop = true
 
 [report]
 # Regexes for lines to exclude from consideration

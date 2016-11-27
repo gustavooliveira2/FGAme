@@ -21,14 +21,14 @@ install:
     - pip3 install hg+http://bitbucket.org/pygame/pygame
     - pip install pgzero
     - pip install pip -U
-    - pip install .[dev] -r requirements.txt
+    - pip install .[dev] -r requirements.txt --upgrade
     - pip install coveralls pytest-cov
     - pip install Pillow
     - pip install FGAme
 
 # run tests
 script:
-    - py.test src/FGAme/tests/ --cov
+    - py.test src/FGAme/tests/
 
 after_success:
     - coveralls
